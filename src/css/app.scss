@@ -1,0 +1,94 @@
+$color-barra :  #171F2A;
+$color-items : #ffffff;
+
+@import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
+
+nav{
+  background:$color-barra;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  -webkit-box-shadow: 0px -1px 17px -4px rgba(0,0,0,0.94);
+  box-shadow: 0px -1px 17px -4px rgba(0,0,0,0.94);
+  z-index: 3;
+  .contenido{
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    top: 0;
+  }
+  .logo{
+    margin: 0px 30px;
+    color: $color-items;
+    font-family: 'Arimo', sans-serif;
+
+  }
+  .un-list{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .item{
+    display: inline-block;
+    margin: 0px 25px;
+    a{
+      color: $color-items;
+      text-decoration:none;
+      font-family: 'Arimo', sans-serif;
+      font-size: .85em;
+    }
+  }
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+main{
+  position: relative;
+    width: 100%;
+    height: 100vh;
+
+  .imagen-fondo{
+    position: absolute;
+    background-image: url("../img/fondo.jpg");
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    filter: brightness(.45);
+  }
+  #inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .text-title , .categoria {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: $color-items;
+    font-family: 'Arimo', sans-serif;
+  }
+  .text-title{
+    font-weight: normal;
+  }
+  .categoria{
+    text-decoration: none;
+    padding: .5rem 2rem;
+    border: 1px solid $color-items;
+  }
+  span{
+    color: $color-items;
+  }
+}
